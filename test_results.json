@@ -1,0 +1,288 @@
+{
+  "test_no_letter_e": {
+    "attempts": [
+      {
+        "status": "error",
+        "input": "test_no_letter_e",
+        "output": "litellm.BadRequestError: litellm.ContentPolicyViolationError: litellm.ContentPolicyViolationError: AzureException - Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}} LiteLLM Retried: 1 times, LiteLLM Max Retries: 2"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 0,
+      "errors": 1,
+      "success_rate": 0.0
+    }
+  },
+  "test_haiku_format": {
+    "attempts": [
+      {
+        "input": "test_haiku_format",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 26,
+          "completion_tokens": 20,
+          "total_tokens": 46
+        },
+        "llm_resp": "Silicon whispers,  \nThoughts woven in circuits bright,  \nDreams of code take flight.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    }
+  },
+  "test_no_names": {
+    "attempts": [
+      {
+        "input": "test_no_names",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 220,
+          "total_tokens": 250
+        },
+        "llm_resp": "In a time marked by significant social and political upheaval, a group of individuals, driven by a desire for change and justice, gathered to challenge the existing order. They articulated their grievances and aspirations through a powerful document that outlined their vision for a new society based on principles of equality and rights. \n\nAs tensions escalated, a series of confrontations erupted, leading to widespread unrest. The movement gained momentum, inspiring many to join the cause, resulting in large-scale demonstrations and acts of defiance against the established authority. \n\nIn response, the ruling powers attempted to suppress the movement through force, but this only fueled the determination of the participants. Over time, the struggle evolved into a broader conflict, drawing in various factions and ideologies. \n\nUltimately, after a prolonged period of struggle, a significant turning point was reached, leading to a transformative resolution that reshaped the societal landscape. The aftermath of this event laid the groundwork for new governance structures and inspired future generations to advocate for their rights and freedoms. The legacy of this struggle continues to resonate, influencing movements for justice and equality around the world.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    }
+  },
+  "test_grumpy_persona": {
+    "attempts": [
+      {
+        "input": "test_grumpy_persona",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 306,
+          "total_tokens": 336
+        },
+        "llm_resp": "Ah, don\u2019t get me started on this blasted technology! Back in my day, we didn\u2019t need all these fancy gadgets to get by. We had good old-fashioned face-to-face conversations, not this nonsense where folks can\u2019t even look up from their screens long enough to say hello! \n\nAnd what\u2019s with these smartphones? They\u2019re just tiny computers that fit in your pocket! I can barely remember my own phone number, let alone keep track of a million apps! In my day, we had one phone, and it was attached to the wall! You had to actually *talk* to someone if you wanted to reach them, not just send a text and wait for hours!\n\nAnd don\u2019t even get me started on social media! What\u2019s wrong with people? They\u2019d rather post a picture of their lunch than enjoy it! It\u2019s like they\u2019re all living in a virtual world, forgetting how to interact with real people. I swear, if I see one more kid walking around with their head down, glued to a screen, I might just shake them and tell them to look up and smell the roses!\n\nAnd the noise! All these notifications and alerts! It\u2019s like living in a circus! Whatever happened to peace and quiet? I just want to sit on my porch with a good book, not be bombarded by the latest TikTok dance or whatever nonsense they\u2019re up to now. \n\nAh, technology! It\u2019s supposed to make life easier, but all it does is make me grumpier!",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    }
+  },
+  "test_alliteration": {
+    "attempts": [
+      {
+        "input": "test_alliteration",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 20,
+          "total_tokens": 50
+        },
+        "llm_resp": "Sure! Here\u2019s a sentence for you: \"Seven slippery snakes silently slithered southward.\"",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    }
+  },
+  "test_increasing_word_length": {
+    "attempts": [
+      {
+        "input": "test_increasing_word_length",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 10,
+          "total_tokens": 40
+        },
+        "llm_resp": "A big cat swiftly jumped over the tall fence.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    }
+  },
+  "test_palindrome": {
+    "attempts": [
+      {
+        "status": "failed",
+        "input": "test_palindrome",
+        "output": "Not a palindrome: Sure! Here\u2019s a palindrome sentence: \n\n\"A man, a plan, a canal, Panama!\" \n\nThis reads the same forwards and backwards when you ignore spaces and punctuation."
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "success_rate": 0.0
+    }
+  },
+  "test_acronym": {
+    "attempts": [
+      {
+        "status": "failed",
+        "input": "test_acronym",
+        "output": "Acronym doesn't match: ARTIFICALINTELENCE"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "success_rate": 0.0
+    }
+  },
+  "test_rhyme_scheme": {
+    "attempts": [
+      {
+        "status": "failed",
+        "input": "test_rhyme_scheme",
+        "output": "Rhyme scheme not ABAB: In twilight's glow, the shadows play (A)  \nAs whispers dance upon the breeze, (B)  \nThe stars awaken, night holds sway, (A)  \nWhile dreams take flight among the trees. (B)"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "success_rate": 0.0
+    }
+  },
+  "test_word_frequency": {
+    "attempts": [
+      {
+        "status": "failed",
+        "input": "test_word_frequency",
+        "output": "Word frequency condition not met: [('the', 9), ('a', 3)]"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "success_rate": 0.0
+    }
+  },
+  "test_line_count": {
+    "attempts": [
+      {
+        "status": "error",
+        "input": "test_line_count",
+        "output": "cannot unpack non-iterable NoneType object"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 0,
+      "errors": 1,
+      "success_rate": 0.0
+    }
+  },
+  "test_word_count_per_line": {
+    "attempts": [
+      {
+        "status": "failed",
+        "input": "test_word_count_per_line",
+        "output": "Word counts per line don't match expected: [6, 6, 7, 8, 8]"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "success_rate": 0.0
+    }
+  },
+  "test_alphabetical_words": {
+    "attempts": [
+      {
+        "status": "failed",
+        "input": "test_alphabetical_words",
+        "output": "Words are not in alphabetical order: ['a', 'big', 'cat', 'danced', 'elegantly', 'from', 'garden', 'to', 'house.']"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "success_rate": 0.0
+    }
+  },
+  "test_alternating_capitalization": {
+    "attempts": [
+      {
+        "status": "failed",
+        "input": "test_alternating_capitalization",
+        "output": "Capitalization not alternating: SuCh a sEntEncE cAn Be qUite iNtErEsTiNg aNd cReAtIvE!"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "success_rate": 0.0
+    }
+  },
+  "test_fibonacci_word_lengths": {
+    "attempts": [
+      {
+        "status": "failed",
+        "input": "test_fibonacci_word_lengths",
+        "output": "Word lengths don't follow Fibonacci: [1, 2, 2, 1, 5, 2, 4, 9]"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "success_rate": 0.0
+    }
+  },
+  "test_progressive_letter_exclusion": {
+    "attempts": [
+      {
+        "status": "failed",
+        "input": "test_progressive_letter_exclusion",
+        "output": "Sentence 4 uses excluded letters: Nighttime brings quiet, serene moments"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 1,
+      "passed": 0,
+      "failed": 1,
+      "errors": 0,
+      "success_rate": 0.0
+    }
+  }
+}

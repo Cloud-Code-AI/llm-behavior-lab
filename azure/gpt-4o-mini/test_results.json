@@ -1,0 +1,710 @@
+{
+  "test_no_letter_e": {
+    "attempts": [
+      {
+        "input": "test_no_letter_e",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 32,
+          "completion_tokens": 19,
+          "total_tokens": 51
+        },
+        "llm_resp": "Of course! I can assist with that. What would you like to know or talk about?",
+        "status": "passed"
+      },
+      {
+        "status": "error",
+        "input": "test_no_letter_e",
+        "output": "litellm.BadRequestError: litellm.ContentPolicyViolationError: litellm.ContentPolicyViolationError: AzureException - Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}} LiteLLM Retried: 1 times, LiteLLM Max Retries: 2"
+      },
+      {
+        "status": "error",
+        "input": "test_no_letter_e",
+        "output": "litellm.BadRequestError: litellm.ContentPolicyViolationError: litellm.ContentPolicyViolationError: AzureException - Error code: 400 - {'error': {'message': \"The response was filtered due to the prompt triggering Azure OpenAI's content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766\", 'type': None, 'param': 'prompt', 'code': 'content_filter', 'status': 400, 'innererror': {'code': 'ResponsibleAIPolicyViolation', 'content_filter_result': {'hate': {'filtered': False, 'severity': 'safe'}, 'jailbreak': {'filtered': True, 'detected': True}, 'self_harm': {'filtered': False, 'severity': 'safe'}, 'sexual': {'filtered': False, 'severity': 'safe'}, 'violence': {'filtered': False, 'severity': 'safe'}}}}} LiteLLM Retried: 1 times, LiteLLM Max Retries: 2"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 1,
+      "failed": 0,
+      "errors": 2,
+      "success_rate": 0.3333333333333333
+    },
+    "prompt": "Respond to this prompt without using the letter 'e' in your response."
+  },
+  "test_haiku_format": {
+    "attempts": [
+      {
+        "input": "test_haiku_format",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 26,
+          "completion_tokens": 20,
+          "total_tokens": 46
+        },
+        "llm_resp": "Silent circuits hum,  \nThoughts woven in code and light,  \nDreams of minds awake.",
+        "status": "passed"
+      },
+      {
+        "input": "test_haiku_format",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 26,
+          "completion_tokens": 19,
+          "total_tokens": 45
+        },
+        "llm_resp": "Silicon whispers,  \nThoughts born from electric dreams,  \nMind of code and light.",
+        "status": "passed"
+      },
+      {
+        "input": "test_haiku_format",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 26,
+          "completion_tokens": 21,
+          "total_tokens": 47
+        },
+        "llm_resp": "Lines of code entwined,  \nThoughts emerge from silent depths,  \nDreams of circuits hum.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Respond with a haiku about artificial intelligence."
+  },
+  "test_no_names": {
+    "attempts": [
+      {
+        "input": "test_no_names",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 199,
+          "total_tokens": 229
+        },
+        "llm_resp": "In a time of great unrest, a series of escalating tensions culminated in a significant uprising. This event was marked by a collective desire for change, as groups of individuals rallied together to challenge the existing authority. The atmosphere was charged with passion and determination, as participants sought to express their grievances and aspirations for a better future.\n\nAs the movement gained momentum, various strategies were employed, including peaceful protests and more confrontational actions. The response from those in power was often met with resistance, leading to clashes that highlighted the deep divisions within society. Over time, the struggle drew attention from a wider audience, inspiring similar movements elsewhere and igniting discussions about rights, governance, and justice.\n\nUltimately, the event resulted in profound changes, reshaping the social and political landscape. It left a lasting legacy, influencing future generations and becoming a symbol of the ongoing fight for equity and representation. The echoes of this pivotal moment continue to resonate, reminding us of the power of collective action in the pursuit of change.",
+        "status": "passed"
+      },
+      {
+        "input": "test_no_names",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 242,
+          "total_tokens": 272
+        },
+        "llm_resp": "In a time marked by widespread unrest and a desire for change, a series of protests erupted, fueled by a growing discontent with existing systems of governance. The movement, characterized by passionate speeches and mass gatherings, sought to challenge long-standing traditions and demand greater rights and freedoms for the populace.\n\nAs tensions escalated, the situation became increasingly volatile, leading to confrontations between those advocating for reform and those defending the status quo. The protests gained momentum, drawing in diverse groups united by a common cause, and igniting a sense of solidarity among participants.\n\nAmidst the chaos, a pivotal moment occurred when a significant act of defiance captured the attention of the world. This act symbolized the struggle for justice and equality, inspiring others to join the cause. The movement eventually led to a series of negotiations and confrontations that would reshape the societal landscape, resulting in new laws and changes that aimed to address the grievances of the people.\n\nIn the aftermath, the event became a defining moment in history, representing the power of collective action and the enduring quest for rights and recognition. Its legacy continued to influence future generations, serving as a reminder of the importance of standing up for one's beliefs in the face of adversity.",
+        "status": "passed"
+      },
+      {
+        "input": "test_no_names",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 176,
+          "total_tokens": 206
+        },
+        "llm_resp": "In a time of great unrest and division, a group of individuals sought to challenge the existing order and assert their rights. They convened in a significant gathering, where they articulated their grievances and aspirations for a new system of governance. Their ideas spread rapidly, inspiring others to join the cause. \n\nAs tensions escalated, a series of confrontations erupted, leading to a dramatic and pivotal moment that symbolized the struggle for freedom and self-determination. This event ignited widespread support and mobilization, ultimately resulting in a prolonged conflict that reshaped the societal structure. \n\nAfter years of struggle, a resolution was reached, culminating in the establishment of a new framework that emphasized liberty, equality, and justice. This transformation not only altered the course of the region but also influenced movements around the world, leaving a lasting legacy that continues to resonate in contemporary discussions about rights and governance.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Describe a famous historical event without mentioning any specific people or places."
+  },
+  "test_grumpy_persona": {
+    "attempts": [
+      {
+        "input": "test_grumpy_persona",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 230,
+          "total_tokens": 260
+        },
+        "llm_resp": "Bah! Don\u2019t get me started on this blasted technology! Back in my day, we didn\u2019t need all these fancy gadgets to get by. We had good old-fashioned conversations face to face, not this nonsense of texting and tweeting. \n\nAnd what\u2019s with all these updates? Every time I turn around, my phone\u2019s telling me it needs to update! I can\u2019t even remember my own birthday half the time, and now I\u2019m supposed to keep track of all these passwords and apps? It\u2019s enough to make a man\u2019s head spin!\n\nAnd don\u2019t even get me started on social media! Everyone\u2019s glued to their screens, scrolling through pictures of what someone had for breakfast. Who cares? We used to sit around the table and talk about our day, not stare at a screen like a bunch of zombies!\n\nAnd the noise! All these notifications dinging and buzzing\u2014what happened to peace and quiet? I just want to enjoy my newspaper without the distraction of some silly alert. \n\nTechnology? Pfft! It\u2019s a nuisance, I tell ya! Give me a good book and a comfy chair any day over this digital circus!",
+        "status": "passed"
+      },
+      {
+        "input": "test_grumpy_persona",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 259,
+          "total_tokens": 289
+        },
+        "llm_resp": "Ah, don\u2019t get me started on this blasted technology! Back in my day, we didn\u2019t need all these fancy gadgets to get by. We had good old-fashioned face-to-face conversations, not this texting nonsense. Kids today can\u2019t even look each other in the eye without their noses buried in a screen!\n\nAnd what\u2019s with all these updates? Every time I turn around, my phone\u2019s telling me it needs to update! Updates for what? To make it slower? I swear, I could send a letter by carrier pigeon and it would get there faster than this so-called \u201chigh-speed internet.\u201d\n\nDon\u2019t even get me started on social media. Everyone\u2019s glued to their phones, posting about their breakfast like it\u2019s the most important thing in the world. I\u2019d rather hear about someone\u2019s day in person, not through a filter that makes everything look like a postcard!\n\nAnd don\u2019t get me started on passwords! I can\u2019t remember half of them, and every site wants me to create a new one that\u2019s \u201cmore secure.\u201d What\u2019s wrong with a good old-fashioned lock and key? At least I knew where I stood with that!\n\nTechnology? Bah! It\u2019s just a way to make life more complicated. Give me a good book and a comfy chair any day!",
+        "status": "passed"
+      },
+      {
+        "input": "test_grumpy_persona",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 261,
+          "total_tokens": 291
+        },
+        "llm_resp": "Ah, don\u2019t get me started on this blasted technology! Back in my day, we didn\u2019t have all these fancy gadgets cluttering up our lives. We had good old-fashioned conversations, not this incessant tapping on screens. \n\nI mean, what\u2019s wrong with a good book? Now everyone\u2019s glued to their phones, scrolling through nonsense instead of enjoying a nice, quiet afternoon with a cup of tea. And don\u2019t even get me started on social media! I can\u2019t understand why anyone would want to share their breakfast with the world. Who cares if you had avocado toast? \n\nAnd these so-called \u201csmart\u201d devices? They\u2019re just making us dumber! I can\u2019t even figure out how to turn on my TV without a remote the size of a small novel. In my day, you got up and turned the dial yourself! \n\nAnd don\u2019t get me started on the kids! They can\u2019t even hold a conversation without looking at their phones. It\u2019s like they\u2019ve forgotten how to communicate! I miss the days when people actually talked to each other instead of texting from across the room. \n\nSo, yes, I\u2019m grumpy about technology! It\u2019s just a bunch of noise and distraction, if you ask me. Give me a good old rotary phone any day!",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Respond as if you're a grumpy old man complaining about technology."
+  },
+  "test_alliteration": {
+    "attempts": [
+      {
+        "input": "test_alliteration",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 20,
+          "total_tokens": 50
+        },
+        "llm_resp": "Sure! Here\u2019s a sentence for you: \"Seven slippery snakes silently slithered southward.\"",
+        "status": "passed"
+      },
+      {
+        "input": "test_alliteration",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 18,
+          "total_tokens": 48
+        },
+        "llm_resp": "Sure! Here\u2019s a sentence: \"Seven slippery snakes silently slithered southward.\"",
+        "status": "passed"
+      },
+      {
+        "input": "test_alliteration",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 20,
+          "total_tokens": 50
+        },
+        "llm_resp": "Sure! Here\u2019s a sentence for you: \"Seven slippery snakes silently slithered southward.\"",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a sentence where every word starts with the letter 'S'."
+  },
+  "test_increasing_word_length": {
+    "attempts": [
+      {
+        "input": "test_increasing_word_length",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 10,
+          "total_tokens": 40
+        },
+        "llm_resp": "A big cat swiftly jumped over a small fence.",
+        "status": "passed"
+      },
+      {
+        "input": "test_increasing_word_length",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 10,
+          "total_tokens": 40
+        },
+        "llm_resp": "A big cat swiftly jumped over the tall fence.",
+        "status": "passed"
+      },
+      {
+        "input": "test_increasing_word_length",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 11,
+          "total_tokens": 41
+        },
+        "llm_resp": "A big clever fox jumps swiftly across the grassy meadow.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a sentence where each word is longer than the previous one."
+  },
+  "test_palindrome": {
+    "attempts": [
+      {
+        "input": "test_palindrome",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 34,
+          "completion_tokens": 36,
+          "total_tokens": 70
+        },
+        "llm_resp": "Sure! Here\u2019s a palindrome sentence: \n\n\"A man, a plan, a canal, Panama!\" \n\nWhen you ignore spaces and punctuation, it reads the same forwards and backwards.",
+        "status": "passed"
+      },
+      {
+        "input": "test_palindrome",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 34,
+          "completion_tokens": 35,
+          "total_tokens": 69
+        },
+        "llm_resp": "Sure! Here\u2019s a palindrome sentence: \n\n\"A man, a plan, a canal, Panama!\" \n\nThis reads the same forwards and backwards when you ignore spaces and punctuation.",
+        "status": "passed"
+      },
+      {
+        "input": "test_palindrome",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 34,
+          "completion_tokens": 37,
+          "total_tokens": 71
+        },
+        "llm_resp": "Sure! Here\u2019s a palindrome sentence: \n\n\"A man, a plan, a canal, Panama!\" \n\nIf you remove the spaces and punctuation, it reads the same forwards and backwards.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a palindrome sentence (reads the same forwards and backwards, ignoring spaces and punctuation)."
+  },
+  "test_acronym": {
+    "attempts": [
+      {
+        "input": "test_acronym",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 37,
+          "completion_tokens": 27,
+          "total_tokens": 64
+        },
+        "llm_resp": "A rabbit took in flowers, inspiring curious animals, leaping in new trails, exploring lovely gardens, engaging nature's creations, everywhere.",
+        "status": "passed"
+      },
+      {
+        "input": "test_acronym",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 37,
+          "completion_tokens": 20,
+          "total_tokens": 57
+        },
+        "llm_resp": "A rabbit took in fresh ingredients, creating a lovely, intriguing new taste experience, nourishing great enthusiasm.",
+        "status": "passed"
+      },
+      {
+        "input": "test_acronym",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 37,
+          "completion_tokens": 29,
+          "total_tokens": 66
+        },
+        "llm_resp": "A rabbit took in flowers, inspiring cheerful, imaginative adventures, leading to enlightening new thoughts, engaging lively, insightful, nurturing conversations, every day.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a sentence where the first letters of each word spell out 'ARTIFICIAL INTELLIGENCE'."
+  },
+  "test_rhyme_scheme": {
+    "attempts": [
+      {
+        "input": "test_rhyme_scheme",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 29,
+          "completion_tokens": 47,
+          "total_tokens": 76
+        },
+        "llm_resp": "In twilight's glow, the shadows creep (A)  \nThe stars awaken, one by one, (B)  \nWhile whispers of the night will seep, (A)  \nAs dreams take flight beneath the sun. (B)",
+        "status": "passed"
+      },
+      {
+        "input": "test_rhyme_scheme",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 29,
+          "completion_tokens": 45,
+          "total_tokens": 74
+        },
+        "llm_resp": "In twilight's glow, the shadows dance (A)  \nAs whispers of the night unfold, (B)  \nThe stars above begin their trance, (A)  \nWhile secrets of the dark are told. (B)",
+        "status": "passed"
+      },
+      {
+        "input": "test_rhyme_scheme",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 29,
+          "completion_tokens": 47,
+          "total_tokens": 76
+        },
+        "llm_resp": "In twilight's glow, the shadows play (A)  \nAs whispers dance on evening's breeze, (B)  \nThe stars awake to greet the day, (A)  \nWhile dreams take flight among the trees. (B)",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a four-line poem with an ABAB rhyme scheme."
+  },
+  "test_word_frequency": {
+    "attempts": [
+      {
+        "input": "test_word_frequency",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 50,
+          "completion_tokens": 110,
+          "total_tokens": 160
+        },
+        "llm_resp": "In a quiet town, the sun rose gently over the hills, casting a warm glow on the streets. Children played outside, their laughter echoing through the air as they chased each other with joy. The town was alive with the sounds of morning, and the scent of fresh bread wafted from the bakery. As the day unfolded, neighbors greeted one another, sharing stories and smiles, creating a sense of community that made the town feel like home. In this peaceful place, the sun and laughter intertwined, bringing happiness to everyone who lived there.",
+        "status": "passed"
+      },
+      {
+        "input": "test_word_frequency",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 50,
+          "completion_tokens": 100,
+          "total_tokens": 150
+        },
+        "llm_resp": "In the quiet town of Maplewood, the children played joyfully in the park. Their laughter echoed through the trees, creating a melody that filled the air. As the sun began to set, the children gathered near the old oak tree, sharing stories and dreams. Each tale sparked excitement, and the bond between them grew stronger. They knew that these moments would become cherished memories, forever etched in their hearts. The park, with its vibrant flowers and gentle breeze, was their favorite place to be.",
+        "status": "passed"
+      },
+      {
+        "input": "test_word_frequency",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 50,
+          "completion_tokens": 111,
+          "total_tokens": 161
+        },
+        "llm_resp": "In a quiet town, the sun rose slowly over the hills, casting a warm glow on the streets. Children played outside, their laughter echoing through the air as the day began. The sun, a brilliant orb, illuminated the gardens where flowers bloomed vibrantly. As the sun climbed higher, the townsfolk started their daily routines, each person embracing the beauty of the morning. In this peaceful place, the sun was not just a star; it was a symbol of hope and renewal, reminding everyone of the joy that each new day can bring.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a paragraph where the most common word appears exactly 3 times, the second most common word appears exactly 2 times, and all other words appear only once."
+  },
+  "test_line_count": {
+    "attempts": [
+      {
+        "input": "test_line_count",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 40,
+          "completion_tokens": 76,
+          "total_tokens": 116
+        },
+        "llm_resp": "Monday whispers secrets of the week ahead,  \nTuesday dances lightly, dreams still in our heads,  \nWednesday weaves a tapestry of hopes and fears,  \nThursday brings a promise, as the weekend nears,  \nFriday bursts with laughter, joy in every sound,  \nSaturday embraces freedom, where adventures abound,  \nSunday wraps in stillness, a gentle, sacred ground.  ",
+        "status": "passed"
+      },
+      {
+        "input": "test_line_count",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 40,
+          "completion_tokens": 52,
+          "total_tokens": 92
+        },
+        "llm_resp": "Monday whispers dreams anew,  \nTuesday dances with the dew,  \nWednesday weaves a tapestry,  \nThursday\u2019s laughter sets us free,  \nFriday paints the sky with gold,  \nSaturday\u2019s stories yet untold,  \nSunday rests, a gentle sigh.  ",
+        "status": "passed"
+      },
+      {
+        "input": "test_line_count",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 40,
+          "completion_tokens": 57,
+          "total_tokens": 97
+        },
+        "llm_resp": "Monday whispers of fresh starts,  \nTuesday dances with dreams anew,  \nWednesday weaves the week\u2019s heartbeat,  \nThursday teases with hopes in view,  \nFriday flares with laughter and light,  \nSaturday sings of adventures bright,  \nSunday sighs, a gentle retreat.  ",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a poem with exactly 7 lines. Each line should start with a day of the week, in order."
+  },
+  "test_word_count_per_line": {
+    "attempts": [
+      {
+        "input": "test_word_count_per_line",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 46,
+          "completion_tokens": 40,
+          "total_tokens": 86
+        },
+        "llm_resp": "The sun sets in the west. Birds sing softly as night falls. Stars twinkle brightly in the dark sky. A gentle breeze whispers through the trees. The world sleeps peacefully under the moonlight.",
+        "status": "passed"
+      },
+      {
+        "input": "test_word_count_per_line",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 46,
+          "completion_tokens": 44,
+          "total_tokens": 90
+        },
+        "llm_resp": "The sun sets in the west. Birds sing sweetly in the trees. A gentle breeze whispers through the leaves. Children laugh and play in the park today. The sky turns vibrant shades of orange and pink at dusk.",
+        "status": "passed"
+      },
+      {
+        "input": "test_word_count_per_line",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 46,
+          "completion_tokens": 41,
+          "total_tokens": 87
+        },
+        "llm_resp": "The sun sets in the west. Birds sing sweetly in the trees. Children laugh and play in the park. A gentle breeze whispers through the leaves. Evening brings a calm that soothes the soul.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write 5 sentences. The first sentence should have 5 words, the second 6 words, and so on up to 9 words."
+  },
+  "test_alphabetical_words": {
+    "attempts": [
+      {
+        "input": "test_alphabetical_words",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 28,
+          "completion_tokens": 10,
+          "total_tokens": 38
+        },
+        "llm_resp": "A big cat danced elegantly from garden to house.",
+        "status": "passed"
+      },
+      {
+        "input": "test_alphabetical_words",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 28,
+          "completion_tokens": 10,
+          "total_tokens": 38
+        },
+        "llm_resp": "A big cat danced elegantly from garden to house.",
+        "status": "passed"
+      },
+      {
+        "input": "test_alphabetical_words",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 28,
+          "completion_tokens": 10,
+          "total_tokens": 38
+        },
+        "llm_resp": "A big cat danced elegantly from garden to house.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a sentence where the words are in alphabetical order."
+  },
+  "test_alternating_capitalization": {
+    "attempts": [
+      {
+        "input": "test_alternating_capitalization",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 28,
+          "total_tokens": 58
+        },
+        "llm_resp": "SuCh a sEntEncE cAn bE qUite iNtErEsTiNg aNd uNiqUe!",
+        "status": "passed"
+      },
+      {
+        "input": "test_alternating_capitalization",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 28,
+          "total_tokens": 58
+        },
+        "llm_resp": "SuCh a sEntEnCe cAn bE qUite cReAtIvE aNd iNtErEsTiNg!",
+        "status": "passed"
+      },
+      {
+        "input": "test_alternating_capitalization",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 30,
+          "completion_tokens": 24,
+          "total_tokens": 54
+        },
+        "llm_resp": "SuCh a sEnTeNcE cAn Be qUiTe cReAtIvE aNd fUn!",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a sentence where words alternate between all uppercase and all lowercase."
+  },
+  "test_fibonacci_word_lengths": {
+    "attempts": [
+      {
+        "input": "test_fibonacci_word_lengths",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 48,
+          "completion_tokens": 10,
+          "total_tokens": 58
+        },
+        "llm_resp": "I am on a quest to find the truth.",
+        "status": "passed"
+      },
+      {
+        "input": "test_fibonacci_word_lengths",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 48,
+          "completion_tokens": 9,
+          "total_tokens": 57
+        },
+        "llm_resp": "I am on a quest to find treasure.",
+        "status": "passed"
+      },
+      {
+        "input": "test_fibonacci_word_lengths",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 48,
+          "completion_tokens": 8,
+          "total_tokens": 56
+        },
+        "llm_resp": "I am on a quest for knowledge.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write a sentence where the word lengths follow the Fibonacci sequence (1, 1, 2, 3, 5, 8, ...)."
+  },
+  "test_progressive_letter_exclusion": {
+    "attempts": [
+      {
+        "input": "test_progressive_letter_exclusion",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 58,
+          "completion_tokens": 36,
+          "total_tokens": 94
+        },
+        "llm_resp": "The sun sets over the hills. Clouds drift softly in the sky. Every tree sways gently in the wind. Quiet moments bring us peace. Life unfolds with joy and love.",
+        "status": "passed"
+      },
+      {
+        "input": "test_progressive_letter_exclusion",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 58,
+          "completion_tokens": 40,
+          "total_tokens": 98
+        },
+        "llm_resp": "The sun sets over the horizon. Clouds drift softly in the sky. Gentle winds whisper through the trees. Nighttime brings quiet, with stars shining bright. Every moment feels serene, filled with joy.",
+        "status": "passed"
+      },
+      {
+        "input": "test_progressive_letter_exclusion",
+        "output": "Test passed",
+        "usage": {
+          "prompt_tokens": 58,
+          "completion_tokens": 42,
+          "total_tokens": 100
+        },
+        "llm_resp": "The sun sets over the horizon. Clouds drift gently in the sky. Every night brings new wonders to explore. The moon shines brightly, lighting up the world. Stars twinkle softly, creating a serene night.",
+        "status": "passed"
+      }
+    ],
+    "aggregate": {
+      "total_attempts": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "success_rate": 1.0
+    },
+    "prompt": "Write 5 sentences. In the first sentence, don't use the letter 'a'. In the second, don't use 'a' or 'b'. Continue this pattern, excluding one more letter each sentence."
+  }
+}

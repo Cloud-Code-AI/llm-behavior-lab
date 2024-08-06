@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "llm-behavior-lab"
+version = "0.1.0"
+description = ""
+authors = ["Saurav Panda <sgp65@cornell.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+kaizen-cloudcode = "^0.3.17"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
